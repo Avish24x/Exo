@@ -149,16 +149,18 @@ header .fa-bars {
 .home .content {
   max-width: 100rem;
   position: relative;
+  top: 40%;
+  margin: 20px;
 }
 
 .home .content h3 {
-  font-size: 3rem;
-  color: #fff;
+  font-size: 8rem;
+  color: black;
 }
 
 .home .content span {
-  font-size: 3rem;
-  color: #666;
+  font-size: 4rem;
+  color: black;
   padding: 1rem 0;
   line-height: 1.5;
 }
