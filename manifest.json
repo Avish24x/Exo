@@ -1,0 +1,9 @@
+{
+  "name": "Exotica.",
+  "short_name": "Exotica",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#de3c4b",
+  "icons": []
+}

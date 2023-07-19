@@ -32,7 +32,33 @@ header {
   z-index: 1000;
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
 
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255, 51, 153, 0.05);
+}
+
+.heading span {
+  color: var(--green);
+}
+#home .btn:hover {
+  background: var(--green);
+}
 header .logo {
   font-size: 4rem;
   color: #333;
@@ -93,10 +119,15 @@ header .fa-bars {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 85%;
   background-size: cover;
   background-position: center;
   animation: slider 12.5s infinite;
+  z-index: 0;
+}
+
+.slider .slide:hover {
+  z-index: 1;
 }
 
 .slider .slide:nth-child(1) {
@@ -117,7 +148,7 @@ header .fa-bars {
 }
 
 .slider .slide:nth-child(4) {
-  background-image: url("https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1191&q=80");
+  background-image: url("https://images.unsplash.com/photo-1575032558058-683487d88fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjczfHxpbmRvb3IlMjBwbGFudHxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60");
   animation-delay: -7.5s;
 }
 
@@ -142,7 +173,7 @@ header .fa-bars {
   96% {
     opacity: 1;
     animation-timing-function: step-end;
-    z-index: -1;
+    z-index: 0;
   }
 }
 
@@ -154,15 +185,17 @@ header .fa-bars {
 }
 
 .home .content h3 {
-  font-size: 8rem;
+  font-size: 5rem;
   color: black;
+  text-shadow: 2px 1px #000;
 }
 
 .home .content span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: black;
   padding: 1rem 0;
   line-height: 1.5;
+  text-shadow: 1px 1px #000;
 }
 
 .home .content p {
@@ -178,6 +211,10 @@ header .fa-bars {
   }
 
   header {
+    padding: 2rem;
+  }
+
+  section {
     padding: 2rem;
   }
 }
@@ -207,6 +244,14 @@ header .fa-bars {
     background: #fff;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: block;
+  }
+
+  header .content h3 {
+    font-size: 10rem;
+  }
+
+  .home .content span {
+    font-size: 3.5rem;
   }
 }
 
