@@ -467,7 +467,7 @@ header .fa-bars {
   text-transform: none;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  margin: 7rem 0;
+  margin: 10rem 0;
 }
 /* media queries   */
 @media (max-width: 991px) {
