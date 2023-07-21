@@ -322,6 +322,19 @@ header .fa-bars {
   z-index: 1;
   border-radius: 0.5rem;
 }
+/* .second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: none;
+}
+
+.image:hover .second-image {
+  display: block;
+} */
 .products .box-container .box .image {
   position: relative;
   text-align: center;
@@ -452,23 +465,29 @@ header .fa-bars {
   border-radius: 0.5rem;
 }
 
-.contact .row .image {
-  flex: 1 1 40rem;
-}
-
 .contact .row .image img {
   width: 100%;
 }
 
-.content .row form .box {
-  padding: 1rem;
+.contact .row form .box {
+  padding: 3rem;
   font-size: 1.7rem;
   color: #333;
   text-transform: none;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  margin: 10rem 0;
+  margin: 0.7rem 0;
 }
+
+.contact .row form .box:focus {
+  border-color: var(--green);
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+  width: 90%;
+}
+
 /* media queries   */
 @media (max-width: 991px) {
   html {
@@ -485,6 +504,12 @@ header .fa-bars {
 
   .home .content p {
     font-size: 1.5rem;
+  }
+  .contact .row form textarea {
+    height: 15rem;
+
+    resize: none;
+    width: 55%;
   }
 }
 
@@ -529,6 +554,12 @@ header .fa-bars {
   .icons-container .icons span {
     font-size: 1.7rem;
   }
+  .contact .row form textarea {
+    height: 15rem;
+
+    resize: none;
+    width: 55%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -538,5 +569,11 @@ header .fa-bars {
 
   .heading {
     font-size: 3rem;
+  }
+  .contact .row form textarea {
+    height: 15rem;
+
+    resize: none;
+    width: 55%;
   }
 }
